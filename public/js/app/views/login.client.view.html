@@ -1,0 +1,51 @@
+<!-- Top Navigation Include -->
+<div data-ng-include="'js/app/views/header.client.view.html'"></div>
+
+<!-- age verification modal -->
+<div data-ng-include="'js/app/views/ageverify.client.modal.html'"></div>
+
+<div class="container" data-ng-controller="LoginController">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" style="text-align:center;">
+            <img alt="Vapor Mo's logo" src="img/circle_logo_300x300.png" />
+            <br/>
+            <br/>
+            <form class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="username">Username</span>
+                        <input type="text" class="form-control" placeholder="Username / Email" aria-describedby="username" data-ng-model="username">
+                        </div>
+                        <br/>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="password">Password</span>
+                            <input type="password" class="form-control" aria-describedby="password" data-ng-model="password">
+                            <span class="input-group-btn">
+                                <input type="submit" class="btn btn-primary" data-ng-click="login()" value="Login" />
+                            </span>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#/signup" class="btn btn-success width100">
+                                    Sign Up
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="/#passwordreset" class="btn btn-default width100">
+                                    Forgot Password?
+                                </a>
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Include -->
+<div data-ng-include="'js/app/views/footer.client.view.html'"></div>

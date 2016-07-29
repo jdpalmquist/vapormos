@@ -1,0 +1,26 @@
+<!-- Modal -->
+<div data-ng-controller="AgeVerifyController">
+  <div id="ageVerifyModal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="true" aria-labelledby="ageVerifyModalLabel">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="ageVerifyModalLabel">Age Verification</h4>
+              </div>
+              <div class="modal-body">
+                  Please verify your age
+              </div>
+              <div class="modal-footer">
+                  <!--
+                  <button type="button" class="btn btn-default" data-dismiss="modal">I am not 21</button>
+                  -->
+                  <a href="http://www.disney.com" class="btn btn-default">
+                    I am not yet 21
+                  </a>
+                  <button type="button" class="btn btn-primary" data-ng-click="age_verified()">
+                    I am at least 21
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

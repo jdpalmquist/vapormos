@@ -1,0 +1,214 @@
+<!-- Top Navigation Include -->
+<div data-ng-include="'js/app/views/header.client.view.html'"></div>
+
+<!-- age verification modal -->
+<div data-ng-include="'js/app/views/ageverify.client.modal.html'"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <a href="#/">
+                <img class="page-logo" alt="vapor mo's logo" src="img/circle_logo_200x200.png" />
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Create your custom juice</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- flavor 1 -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="flavor-1-label">
+                                            Flavor # 1
+                                        </span>
+                                        <select id="flavor_1" class="form-control" ng-model="flavor_1">
+                                            <option value="">Choose flavor # 1...</option>
+                                            
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- boost 1 -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="boost-1-label">
+                                            Boost # 1
+                                        </span>
+                                        <select class="form-control" ng-model="boost_1">
+                                            <option value="">[Free] Boost the flavor...</option>
+                                            <option value="0">none</option>
+                                            <option value="1">x1</option>
+                                            <option value="2">x2</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- flavor 2 -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="flavor-2-label">
+                                            Flavor # 2
+                                        </span>
+                                        <select id="flavor_2" class="form-control" ng-model="flavor_2">
+                                            <option value="">Choose flavor # 2...</option>
+                                            
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- boost 2 -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="boost-2-label">
+                                            Boost # 2
+                                        </span>
+                                        <select class="form-control" ng-model="boost_2">
+                                            <option value="">[Free] Boost the flavor...</option>
+                                            <option value="0">none</option>
+                                            <option value="1">x1</option>
+                                            <option value="2">x2</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- pg/vg -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="pg-vg-label">
+                                            PG/VG
+                                        </span>
+                                        <select class="form-control" ng-model="pg_vg">
+                                            <option value="">Choose pg/vg...</option>
+                                            <option value="50-50">50/50</option>
+                                            <option value="30-70">30/70</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- nic level -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="nic-lvl-label">
+                                            Nic Level
+                                        </span>
+                                        <select class="form-control" ng-model="nic_lvl">
+                                            <option value="">Choose nic level...</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- boost -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="flavor-adds-label">
+                                            Flavor Adds
+                                        </span>
+                                        <select class="form-control" ng-model="flavor_adds">
+                                            <option value="">[Free] Choose flavor add...</option>
+                                            <option value="koolada">Koolada</option>
+                                            <option value="sweetener">Sweetener</option>
+                                            <option value="sour">Sour</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- bottle size -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="bottle-size-label">
+                                            Bottle Size    
+                                        </span>
+                                        <select class="form-control" ng-model="bottle_size">
+                                            <option value="">Choose bottle size...</option>
+                                            <option value="10">10 ml</option>
+                                            <option value="30">30 ml</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                                <!-- bottle type -->
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="bottle-type-label">
+                                            Bottle Type    
+                                        </span>
+                                        <select class="form-control" ng-model="bottle_type">
+                                            <option value="">Choose bottle type...</option>
+                                            <option value="regular">Regular bottle</option>
+                                            <option value="unicorn">Unicorn bottle</option>
+                                        </select>                                        
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="width100 text-right">
+                                <button class="btn btn-default" data-ng-click="clear_form()">
+                                    Clear
+                                </button>
+                                &nbsp;
+                                &nbsp;
+                                <button class="btn btn-primary" data-ng-click="add_to_order()">
+                                    Add to Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Your Order</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="order" class="row">
+                                <!-- order items dynamically populate here -->
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="width100 text-right">
+                                <button class="btn btn-success" data-ng-click="continue()">
+                                    Continue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<!-- Footer Include -->
+<div data-ng-include="'js/app/views/footer.client.view.html'"></div>

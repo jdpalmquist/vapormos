@@ -1,0 +1,57 @@
+angular.module('vapormos')
+.factory('blendFactory', function(){
+    return {
+        all_blends: function(){
+            return [
+                'Angry Heifer',
+                'Apple Fritter',
+                'Banana Cream Pie',
+                'Banana Pudding',
+                'Beach Bum',
+                'Betty Crackit',
+                'Blueberry Yogurt',
+                'Blue Slushy',
+                'Cereal Milk',
+                'Cherry &amp; 7',
+                'Cherry Tart',
+                'Checkmate',
+                'Chocolate Pudding',
+                'Dragon Tears',
+                'Fireballs',
+                'Green Lotus',
+                'Gummy Bears',
+                'Hawk Juice',
+                'Jelly Donut',
+                'King Kong',
+                'Lemon Drop',
+                'Maple Donut',
+                'Milk &amp; Honey',
+                'Mo Berry',
+                'Mo Money',
+                'Munch Berries',
+                'Orange Fluff',
+                'Nectarine Dream',
+                'Pale Rider',
+                'Peanut Butter Cookie',
+                'Pineapple Puff',
+                'Pink Lemonade',
+                'Pumpkin Pie',
+                'Red Slushy',
+                'Richie Rich',
+                'Rogue',
+                'Skittles Custard',
+                'Smack Daniels',
+                'Smores',
+                'Strawberry Milkshake',
+                'Strawberry Yogurt',
+                'The Missing Link',
+                'Tiger Blood',
+                'Tropical Lightning',
+                'Venus',
+                'Voodoo Doll',
+                'Wango Mango',
+                'Wilso'
+            ];
+        }
+    };
+});

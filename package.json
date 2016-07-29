@@ -1,0 +1,29 @@
+{
+  "name": "VaporMos",
+  "version": "1.0.0",
+  "description": "Vapor Mos online sales portal",
+  "main": "server.js",
+  "dependencies": {
+    "express": "*.*",
+    "express-session": "*.*",
+    "express-useragent": "*.*",
+    "mongoose": "*.*",
+    "moment": "*.*",
+    "body-parser": "*.*",
+    "cookie-parser": "*.*",
+    "bcrypt-nodejs": "*.*",
+    "nodemailer": "*.*",
+    "cron": "*.*",
+    "step": "*.*",
+    "lactate": "*.*",
+    "crypto": "*.*",
+    "socket.io": "*.*",
+    "chokidar": "*.*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Palmquist",
+  "repository": "",
+  "license": "ISC"
+}
